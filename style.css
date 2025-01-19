@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+/* nav-bar section */
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  color: rgb(60, 60, 60);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* banner-section */
+.banner-content h1 {
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  font-weight: 500;
+  color: rgb(54, 57, 88);
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+.colored-name {
+  color: rgb(255, 131, 103);
+}
+.banner-content p {
+  color: rgb(62, 62, 62);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  width: 309px;
+  margin-bottom: 36px;
+}
+.btn-primary {
+  border-radius: 6px;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 128, 99) -28.333%,
+    rgb(244, 96, 96) 95.833%
+  );
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 18px 55px;
+  border: none;
+  cursor: pointer;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+
+
+/* <---mobile device media---> */
+@media only screen and (max-width:567px) {
+    ul{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+}
+
+/* teblet-screen media */
+@media only screen and (min-width:567px) and (max-width:992px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+}
