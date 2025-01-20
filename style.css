@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  max-width: 1600px;
+  max-width: 1800px;
   margin: 0 auto;
   margin-top: 35px;
 }
@@ -19,14 +19,14 @@ ul {
   gap: 20px;
   color: rgb(60, 60, 60);
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 /* banner-section */
 .banner-content h1 {
   font-family: "Bebas Neue";
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 500;
   color: rgb(54, 57, 88);
   margin-bottom: 18px;
@@ -38,7 +38,7 @@ ul {
 .banner-content p {
   color: rgb(62, 62, 62);
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   width: 309px;
   margin-bottom: 36px;
@@ -52,38 +52,82 @@ ul {
   );
   color: rgb(255, 255, 255);
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   padding: 18px 55px;
   border: none;
   cursor: pointer;
 }
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.banner-img img{
-    width: 100%;
+.banner-img img {
+  width: 100%;
 }
+
+/* about-section */
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-content h1 {
+  color: rgb(54, 57, 88);
+  font-family: Bebas Neue;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.about-content p {
+  color: rgb(62, 62, 62);
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 451px;
+  margin-top: 27px;
+  margin-bottom: 24px;
+}
+.about-img img{
+  width: 100%;
+}
+
+
+
+
 
 
 
 
 /* <---mobile device media---> */
-@media only screen and (max-width:567px) {
-    ul{
-        flex-direction: column;
-    }
-    .banner{
-        flex-direction: column-reverse;
-    }
+@media only screen and (max-width: 567px) {
+  body{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  ul,
+  .about {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .about-content p,
+  .banner-content p {
+    width: 100%;
+  }
 }
 
 /* teblet-screen media */
-@media only screen and (min-width:567px) and (max-width:992px) {
-    .banner{
-        flex-direction: column-reverse;
-    }
-
+@media only screen and (min-width: 567px) and (max-width: 992px) {
+  body{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .about{
+    flex-direction: column;
+  }
 }
