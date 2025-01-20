@@ -54,7 +54,7 @@ ul {
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 500;
-  padding: 18px 55px;
+  padding: 18px 50px;
   border: none;
   cursor: pointer;
 }
@@ -72,6 +72,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 90px;
 }
 .about-content h1 {
   color: rgb(54, 57, 88);
@@ -95,6 +96,8 @@ ul {
 .project {
   max-width: 1800px;
   margin: 0 auto;
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 .project-head {
   font-family: Bebas Neue;
@@ -131,9 +134,29 @@ ul {
 .project-box p {
   color: rgb(108, 108, 108);
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   width: 316px;
+}
+/* inquiry section */
+.inquiry {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(./shapes/Group_33094_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.inquiry h1 {
+  color: rgb(255, 255, 255);
+  font-family: Bebas Neue;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 
@@ -147,16 +170,24 @@ ul {
   }
   ul,
   .about,
-  .project-container {
+  .project-container{
     flex-direction: column;
   }
   .banner {
     flex-direction: column-reverse;
   }
   .about-content p,
-  .banner-content p,
-  .project-container {
+  .banner-content p{
     width: 100%;
+  }
+  .project-container{
+    width: calc(100% - 5%);
+  }
+  .btn-primary{
+    padding: 10px 10px;
+  }
+  .inquiry h1{
+    font-size: 1.8rem;
   }
 }
 
@@ -170,10 +201,10 @@ ul {
     flex-direction: column-reverse;
   }
   .about,
-  .project-container {
+  .project-container{
     flex-direction: column;
   }
-  .project-container{
+  .project-container {
     text-align: center;
   }
 }
