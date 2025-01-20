@@ -158,7 +158,27 @@ ul {
   font-size: 4rem;
   font-weight: 700;
 }
-
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+footer h4 {
+  color: rgb(105, 104, 113);
+  font-family: Bebas Neue;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+footer h2 {
+  color: rgb(54, 57, 88);
+  font-family: Roboto;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.logo-container img{
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+}
 
 
 
@@ -170,24 +190,27 @@ ul {
   }
   ul,
   .about,
-  .project-container{
+  .project-container {
     flex-direction: column;
   }
   .banner {
     flex-direction: column-reverse;
   }
   .about-content p,
-  .banner-content p{
+  .banner-content p {
     width: 100%;
   }
-  .project-container{
+  .project-container {
     width: calc(100% - 5%);
   }
-  .btn-primary{
+  .btn-primary {
     padding: 10px 10px;
   }
-  .inquiry h1{
+  .inquiry h1 {
     font-size: 1.8rem;
+  }
+  footer h2{
+    font-size: 2rem;
   }
 }
 
@@ -201,7 +224,7 @@ ul {
     flex-direction: column-reverse;
   }
   .about,
-  .project-container{
+  .project-container {
     flex-direction: column;
   }
   .project-container {
